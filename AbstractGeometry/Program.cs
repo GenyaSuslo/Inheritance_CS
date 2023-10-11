@@ -21,10 +21,10 @@ namespace AbstractGeometry
 				Console.WindowWidth, Console.WindowHeight
 				);
 			PaintEventArgs e= new PaintEventArgs(graphics,window_rect);
-
-			Rectangle rect = new Rectangle(200, 150, 100, 100, 5, Color.AliceBlue);
+            Rectangle rect = new Rectangle(200, 150, 200, 200, 5, Color.Aquamarine);
 			rect.Info(e);
-		}
+            
+        }
 		[DllImport("kernel32.dll")]
 		public static extern IntPtr GetConsoleWindow();
 		[DllImport("kernel32.dll")]
